@@ -42,7 +42,8 @@ intervalId = setInterval(() => {
         daysT.textContent = "00";
         hoursT.textContent = "00";
         minutesT.textContent = "00";
-        secondsT.textContent = "00";
+            secondsT.textContent = "00";
+            return;
         }
         const { days, hours, minutes, seconds } = convertMs(time);
         daysT.textContent = addLeadingZero(days);
